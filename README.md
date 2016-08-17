@@ -64,4 +64,4 @@ $logger->log('general', 'test message', \T4web\Log\Domain\Log\Log::PRIORITY_ERR,
 ```
 
 If you use `t4web\admin` it will looks like this:
-![log list](http://teamforweb.com/var/admin-log-1.jpg)
+![log list](http://teamforweb.com/var/admin-log-2.jpg)
