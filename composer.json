@@ -25,7 +25,7 @@
         "zendframework/zend-servicemanager": "~2.5.0",
 
         "t4web/infrastructure": "~1.2.0",
-        "t4web/crud": "dev-master",
+        "t4web/crud": "~1.0.0",
         "t4web/domain-module": "~1.2.0"
     },
     "suggest": {
