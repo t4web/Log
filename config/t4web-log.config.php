@@ -2,7 +2,7 @@
 
 return [
     'scopes' => [
-        1 => 'general'
+        'general' => 1,
     ],
 ];
 

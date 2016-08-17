@@ -48,10 +48,11 @@ class Logger
      */
     public function log($scope, $message, $priority = self::PRIORITY_INFO, $extras = [])
     {
-        $scopeId = array_search($scope, $this->scopes);
+        $scope = strtolower($scope);
+        $scopeId = 1;
 
-        if ($scopeId === false) {
-            $scopeId = 1;
+        if (isset($this->scopes[$scope])) {
+            $scopeId = $this->scopes[$scope];
         }
 
         $this->repository->add(new Log([

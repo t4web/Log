@@ -47,10 +47,10 @@ For define custom scopes, describe it in config:
 ```php
 't4web-log' => [
    'scopes' => [
-       1 => 'general',
-       2 => 'payments',
-       3 => 'users',
-       4 => 'background-jobs',
+       'general' => 1,
+       'payments' => 2,
+       'users' => 3,
+       'background-jobs' => 4,
    ],
 ],
 ```
