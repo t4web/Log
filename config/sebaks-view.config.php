@@ -21,7 +21,7 @@ return [
                         ],
                     ],
                     'children' => [
-                        [
+                        'filter-id' => [
                             'template' => 't4web-admin/block/form-element-text',
                             'capture' => 'form-element',
                             'data' => [
@@ -34,7 +34,7 @@ return [
                                 ],
                             ],
                         ],
-                        [
+                        'filter-message' => [
                             'template' => 't4web-admin/block/form-element-text',
                             'capture' => 'form-element',
                             'data' => [
@@ -47,7 +47,7 @@ return [
                                 ],
                             ],
                         ],
-                        [
+                        'filter-scope' => [
                             'template' => 't4web-admin/block/form-element-select',
                             'capture' => 'form-element',
                             'data' => [
@@ -64,7 +64,7 @@ return [
                                 ],
                             ],
                         ],
-                        [
+                        'filter-priority' => [
                             'template' => 't4web-admin/block/form-element-select',
                             'capture' => 'form-element',
                             'data' => [
@@ -84,7 +84,7 @@ return [
                                 ],
                             ],
                         ],
-                        [
+                        'filter-date' => [
                             'template' => 't4web-admin/block/form-element-datetime-range',
                             'capture' => 'form-element',
                             'data' => [
