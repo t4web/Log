@@ -7,6 +7,15 @@ use T4web\Log\Domain\Log\Log;
 
 class Logger
 {
+    const PRIORITY_EMERG = 1;
+    const PRIORITY_ALERT = 2;
+    const PRIORITY_CRIT = 3;
+    const PRIORITY_ERR = 4;
+    const PRIORITY_WARN = 5;
+    const PRIORITY_NOTICE = 6;
+    const PRIORITY_INFO = 7;
+    const PRIORITY_DEBUG = 8;
+
     /**
      * @var RepositoryInterface
      */
@@ -37,7 +46,7 @@ class Logger
      * @param int $priority
      * @param array $extras
      */
-    public function log($scope, $message, $priority = Log::PRIORITY_INFO, $extras = [])
+    public function log($scope, $message, $priority = self::PRIORITY_INFO, $extras = [])
     {
         $scopeId = array_search($scope, $this->scopes);
 

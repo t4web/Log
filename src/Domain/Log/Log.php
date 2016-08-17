@@ -6,15 +6,6 @@ use T4webDomain\Entity;
 
 class Log extends Entity
 {
-    const PRIORITY_EMERG = 1;
-    const PRIORITY_ALERT = 2;
-    const PRIORITY_CRIT = 3;
-    const PRIORITY_ERR = 4;
-    const PRIORITY_WARN = 5;
-    const PRIORITY_NOTICE = 6;
-    const PRIORITY_INFO = 7;
-    const PRIORITY_DEBUG = 8;
-
     /**
      * @var string
      */

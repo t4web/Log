@@ -60,7 +60,7 @@ Using
 ```php
 $logger = $this->getServiceLocator()->get(\T4web\Log\Logger::class);
 $logger->log('general', 'test message');
-$logger->log('general', 'test message', \T4web\Log\Domain\Log\Log::PRIORITY_ERR, ['file' => __FILE__, 'line' => __LINE__]);
+$logger->log('general', 'test message', \T4web\Log\Logger::PRIORITY_ERR, ['file' => __FILE__, 'line' => __LINE__]);
 ```
 
 If you use `t4web\admin` it will looks like this:

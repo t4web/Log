@@ -73,10 +73,10 @@ return [
                                     'label' => 'Priority',
                                     'options' =>  [
                                         '' => 'All',
-                                        Domain\Log\Log::PRIORITY_ERR => 'ERR',
-                                        Domain\Log\Log::PRIORITY_WARN => 'WARN',
-                                        Domain\Log\Log::PRIORITY_INFO => 'INFO',
-                                        Domain\Log\Log::PRIORITY_DEBUG => 'DEBUG',
+                                        Logger::PRIORITY_ERR => 'ERR',
+                                        Logger::PRIORITY_WARN => 'WARN',
+                                        Logger::PRIORITY_INFO => 'INFO',
+                                        Logger::PRIORITY_DEBUG => 'DEBUG',
                                     ],
                                 ],
                                 'fromParent' => [
@@ -224,16 +224,16 @@ return [
                                     'data' => [
                                         'static' => [
                                             'textValueMap' => [
-                                                Domain\Log\Log::PRIORITY_ERR => 'ERR',
-                                                Domain\Log\Log::PRIORITY_WARN => 'WARN',
-                                                Domain\Log\Log::PRIORITY_INFO => 'INFO',
-                                                Domain\Log\Log::PRIORITY_DEBUG => 'DEBUG',
+                                                Logger::PRIORITY_ERR => 'ERR',
+                                                Logger::PRIORITY_WARN => 'WARN',
+                                                Logger::PRIORITY_INFO => 'INFO',
+                                                Logger::PRIORITY_DEBUG => 'DEBUG',
                                             ],
                                             'colorValueMap' => [
-                                                Domain\Log\Log::PRIORITY_ERR => 'danger',
-                                                Domain\Log\Log::PRIORITY_WARN => 'warning',
-                                                Domain\Log\Log::PRIORITY_INFO => 'info',
-                                                Domain\Log\Log::PRIORITY_DEBUG => 'default',
+                                                Logger::PRIORITY_ERR => 'danger',
+                                                Logger::PRIORITY_WARN => 'warning',
+                                                Logger::PRIORITY_INFO => 'info',
+                                                Logger::PRIORITY_DEBUG => 'default',
                                             ],
                                         ],
                                         'fromParent' => ['priority' => 'value'],
