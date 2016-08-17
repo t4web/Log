@@ -3,8 +3,10 @@
 namespace T4web\Log;
 
 use Zend\ModuleManager\Feature\ConfigProviderInterface;
+use Zend\ModuleManager\Feature\ConsoleUsageProviderInterface;
+use Zend\Console\Adapter\AdapterInterface;
 
-class Module implements ConfigProviderInterface
+class Module implements ConfigProviderInterface, ConsoleUsageProviderInterface
 {
     public function getConfig()
     {
@@ -20,5 +22,13 @@ class Module implements ConfigProviderInterface
                 ),
             ),
         );
+    }
+
+    public function getConsoleUsage(AdapterInterface $console)
+    {
+        return [
+            'Initialize log',
+            'log init' => 'Check config, create table `log`',
+        ];
     }
 }
