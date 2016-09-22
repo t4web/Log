@@ -45,4 +45,36 @@ class Log extends Entity
 
         return parent::populate($array);
     }
+    
+    /**
+     * @return string
+     */
+    public function getMessage()
+    {
+        return $this->message;
+    }
+
+    /**
+     * @return int
+     */
+    public function getScope()
+    {
+        return $this->scope;
+    }
+
+    /**
+     * @return int
+     */
+    public function getPriority()
+    {
+        return $this->priority;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCreatedDt()
+    {
+        return $this->createdDt;
+    }
 }
