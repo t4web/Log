@@ -22,7 +22,7 @@ return [
     'console' => [
         'router' => [
             'routes' => [
-                'migration-init' => [
+                'log-init' => [
                     'type' => 'Simple',
                     'options' => [
                         'route' => 'log init',
